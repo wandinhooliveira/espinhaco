@@ -3,9 +3,11 @@ from django.utils import timezone
 
 # Create your models here.
 class Noticia(models.Model):
-	autor = models.CharField(max_length=200)
+	autor = models.CharField(max_length=200, default='Zé Geraldo')
 	titulo = models.CharField(max_length=300)
 	slug = models.SlugField(max_length=100, blank=True)
+	subtitulo = models.CharField(max_length=50, blank=True)
+	categoria = models.CharField(max_length=30, default='Geral')
 	foto = models.CharField(max_length=20)
 	texto = models.TextField()
 	tags = models.CharField(max_length=200)
