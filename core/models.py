@@ -8,7 +8,7 @@ class Noticia(models.Model):
 	slug = models.SlugField(max_length=100, blank=True)
 	subtitulo = models.CharField(max_length=50, blank=True)
 	categoria = models.CharField(max_length=30, default='Geral')
-	foto = models.CharField(max_length=20)
+	foto = models.CharField(max_length=20, blank=True)
 	texto = models.TextField()
 	tags = models.CharField(max_length=200)
 	data = models.DateTimeField(default=timezone.now)

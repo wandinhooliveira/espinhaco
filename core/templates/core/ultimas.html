@@ -1,0 +1,22 @@
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="col-sm-9 col-12">
+
+	<h2>Últimas</h2>
+						<div class="barra"></div>
+						
+						{% for noticia in noticias %}
+						<a href="{% url 'noticia' slug=noticia.slug %}" style="color: black;">
+							<div class="noticia-pequena">
+							<img src="http://liderancacomvoce.com.br/statics/images/noticias/{{ noticia.foto }}.png">
+							<div class="texto-ultimas">
+								<h1>{{ noticia.titulo }}</h1>
+								<h2><i>{{ noticia.subtitulo }}</i></h2>
+							</div>
+						</div>
+						</a>
+						{% endfor %}
+</div>		
+{% endblock %}

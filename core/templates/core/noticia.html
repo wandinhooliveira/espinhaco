@@ -1,0 +1,18 @@
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="col-sm-9 col-12">
+
+    <div id="corpoNoticia" style="padding-right: 10px; padding-left: 10px">       		
+		<h2>{{noticia.titulo}}</h2>	
+		<h4 style="color: gray;"><i>{{noticia.subtitulo}}</i></h4>
+		<h5>por {{noticia.autor}}</h5>
+
+		<img src="http://liderancacomvoce.com.br/statics/images/noticias/{{ noticia.foto }}.png" style="width: 100%;">
+
+		<div style="padding: 10px;">{{noticia.texto| safe | linebreaks}}		
+		</div>			
+	</div>		
+</div>		
+{% endblock %}
