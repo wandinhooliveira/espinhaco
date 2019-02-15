@@ -1,0 +1,181 @@
+#site{
+
+	padding: 5%;
+	padding-top: 0;
+	padding-bottom: 10px;
+	
+
+}
+
+.topo{
+	height: 160px;
+	width: 100%;
+	background-image: url("http://liderancacomvoce.com.br/statics/images/topo-fundo.png");
+	background-repeat: repeat-x;
+}
+#propaganda-topo{
+	padding: 20px;
+	width: 70%;
+}
+.col-sm-6{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.col-12{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+
+.topo img{
+	height: 100%;
+	width: 100%;
+}
+.topo a{
+	color: #ffffff;
+	font-size: 1.6em;
+	line-height: 160px;
+
+
+}
+.pos-f-t{
+	display: none;
+}
+.nav {
+	padding-right: 5%;
+	padding-left: 5%;
+	
+}
+.barra{
+	height: 3px;
+	width: 100%;
+	background-color: #c2251e;
+}
+
+.nav-item{
+	font-style: none;
+
+}
+
+.navbar a {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.noticia-destaque img{
+	width: 100%;
+	padding: 5px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+.noticia-destaque-1{
+	width: 50%;
+	float: left;
+}
+.noticia-destaque-1{
+	width: 50%;
+	float: right;
+}
+#lista-noticias{
+	float: left;
+
+}
+.noticia-pequena{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.noticia-pequena img{
+	width: 40%;
+
+
+}
+.texto-lista{
+	width: 60%;
+	float: right;
+}
+.texto-lista h1{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.texto-lista h2{
+	font-size: 0.8em;
+	color: gray;
+	
+}
+
+.texto-ultimas{
+	width: 60%;
+	float: right;
+}
+.texto-ultimas h1{
+	font-size: 1.0em;
+	font-weight: bold;
+}
+.texto-ultimas h2{
+	font-size: 0.8em;
+	color: gray;
+}
+#lateral{
+		float: right;
+		
+}
+#lateral img{
+	width: 100%;
+
+}
+#feed{
+	background-color: #c2251e;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+}
+#feed input{
+	width: 80%;
+	margin-right: 10%; 
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+#feed button {
+	margin-bottom: 10px;
+}
+#rodape-propaganda{
+	width: 100%;
+	margin-top: 10px;
+	padding-top:10px;
+}
+#rodape-propaganda img{
+	width: 100%;
+}
+#rodape{
+	width: 100%;
+	line-height: 40px;
+	background-color: #c2251e;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+@media (max-width: 600px) { 
+	.topo{
+		height: 70px;
+	}
+	#propaganda-topo{
+	padding: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 100%;
+	}
+	#propaganda-topo img{
+		width: 100%;
+	}
+	#nav-comum{
+		display: none;
+	}
+	.pos-f-t{
+	display: block;
+	}
+ }
