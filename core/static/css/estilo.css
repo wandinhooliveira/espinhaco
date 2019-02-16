@@ -32,13 +32,13 @@
 	height: 100%;
 	width: 100%;
 }
-.topo a{
+
+.topo i{
 	color: #ffffff;
-	font-size: 1.6em;
+	font-size: 20px;
 	line-height: 160px;
-
-
 }
+
 .pos-f-t{
 	display: none;
 }

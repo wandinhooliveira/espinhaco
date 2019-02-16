@@ -5,7 +5,7 @@ import random
 # Create your views here.
 def index(request):
 
-	noticias = Noticia.objects.all().order_by('-data')[:7]
+	noticias = Noticia.objects.all().order_by('-data')[:6]
 	capa = Noticia.objects.filter(prioridade=1).order_by('-data')[:1]
 	slide = Noticia.objects.filter(prioridade=1).order_by('-data')[1:7]
 	destaque1 = random.choice(slide)
@@ -24,3 +24,26 @@ def ultimas(request):
 
 	noticias = Noticia.objects.all().order_by('-data')
 	return render(request, 'core/ultimas.html',{'noticias': noticias})
+
+def contato(request):
+	return render(request, 'core/contato.html',{})
+
+def galeria(request):
+	noticias = Noticia.objects.all().order_by('-data')
+	return render(request, 'core/galeria.html',{'noticias': noticias})
+
+def geral(request):
+	noticias = Noticia.objects.filter(categoria='Geral').order_by('-data')
+	return render(request, 'core/ultimas.html', {'noticias': noticias})
+
+def politica(request):
+	noticias = Noticia.objects.filter(categoria='Política').order_by('-data')
+	return render(request, 'core/ultimas.html', {'noticias': noticias})
+
+def policia(request):
+	noticias = Noticia.objects.filter(categoria='Polícia').order_by('-data')
+	return render(request, 'core/ultimas.html', {'noticias': noticias})
+
+def entretenimento(request):
+	noticias = Noticia.objects.filter(categoria='Entretenimento').order_by('-data')
+	return render(request, 'core/ultimas.html', {'noticias': noticias})

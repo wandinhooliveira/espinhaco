@@ -13,14 +13,16 @@
 <body>
 	<div class="topo container-fluid">
 		<div class="topo row">
-			<div class="col-sm-4 col-3"></div>
-			<div class="col-sm-4 col-6">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 col-12">
+				
 				<img src="http://liderancacomvoce.com.br/statics/images/logo.png">
+				
 			</div>
-			<div class="col-sm-4 col-3">
+			<div class="col-sm-4">
 				<a href="#">&nbsp&nbsp<i class="fas fa-envelope-square"></i>&nbsp</i></a>
-				<a href="#"> <i class="fab fa-facebook-square">&nbsp</i></a>
-				<a href="#"><i class="fab fa-whatsapp-square"><strong>&nbsp31 0000-0000</strong></i></a>
+				<a href="http://www.facebook.com/inovaitabira" target="_blank"> <i class="fab fa-facebook-square">&nbsp</i></a>
+				<i class="fab fa-whatsapp-square"><strong>&nbsp31 0000-0000</strong></i>
 			</div>
 		</div>
 	</div>	
@@ -30,19 +32,19 @@
 	  <div class="collapse" id="navbarToggleExternalContent">
 	    <nav id="nav-collapse" class="nav navbar navbar-light flex-column flex-sm-row" style="background-color: #fff;">
 		  <a class="flex-sm-fill text-sm-center nav-link " href="{% url 'index' %}">Home</a>
-		  <a class="flex-sm-fill text-sm-center nav-link" href="ultimas.html">Últimas notícias</a>
+		  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'ultimas' %}">Últimas notícias</a>
 			  <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Notícias
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Política</a>
+		          <a class="dropdown-item" href="{% url 'categoria' cat='Geral'  %">Política</a>
 		          <a class="dropdown-item" href="#">Polícia</a>
 		          <a class="dropdown-item" href="#">Entretenimento</a>
 		        </div>
 		      </li>
-		  <a class="flex-sm-fill text-sm-center nav-link" href="fotos.html">Galeria de fotos</a>
-		  <a class="flex-sm-fill text-sm-center nav-link" href="contato.html">Contato</a>
+		  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'galeria' %}">Galeria de fotos</a>
+		  <a class="flex-sm-fill text-sm-center nav-link" href="{%url 'contato' %}">Contato</a>
 		</nav>
 	  </div>
 	  <nav class="navbar navbar-light bg-light">
@@ -61,13 +63,14 @@
 	          Notícias
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Política</a>
-	          <a class="dropdown-item" href="#">Polícia</a>
-	          <a class="dropdown-item" href="#">Entretenimento</a>
+	          <a class="dropdown-item" href="{% url 'geral'%}">Geral</a>
+	          <a class="dropdown-item" href="{% url 'politica'%}">Política</a>
+	          <a class="dropdown-item" href="{% url 'policia'%}">Polícia</a>
+	          <a class="dropdown-item" href="{% url 'entretenimento'%}">Entretenimento</a>
 	        </div>
 	      </li>
-	  <a class="flex-sm-fill text-sm-center nav-link" href="fotos.html">Galeria de fotos</a>
-	  <a class="flex-sm-fill text-sm-center nav-link" href="contato.html">Contato</a>
+	  <a class="flex-sm-fill text-sm-center nav-link" href="{% url 'galeria' %}">Galeria de fotos</a>
+	  <a class="flex-sm-fill text-sm-center nav-link" href="{%url 'contato' %}">Contato</a>
 	</nav>
 	<div class="barra"></div>
 	
@@ -84,21 +87,15 @@
 					<div id="lateral" class="col-sm-3 col-12">
 						<h3>Facebook</h3>
 						<div class="barra"></div>
-						<a href=""><img style="padding: 10px;" src="http://liderancacomvoce.com.br/statics/images/face.png"></a>
-						<h3>Feed</h3>
-						<div class="barra"></div>
-						<div id="feed">
-							<center><p>Assine nosso feed e receba todas as nossas atualizações</p>
-								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-								<button type="submit" class="btn btn-outline-light">Enviar</button>
-							</center>
-						</div>
+						<a href="http://www.facebook.com/inovaitabira"><img style="padding: 10px;" src="http://liderancacomvoce.com.br/statics/images/face.png"></a>
+						
+						
 						<h3>Publicidade</h3>
 						<div class="barra" style="margin-bottom: 10px;"></div>
 						<img src="http://liderancacomvoce.com.br/statics/images/anuncie.png">
 						<h3>Vagas de emprego</h3>
 						<div class="barra"></div>
-						<img src="http://liderancacomvoce.com.br/statics/images/carteira.jpg">
+						<a target="_blank" href="http://www.itabira.mg.gov.br/portal/?p=73643"><img style="padding-top: 10px;" src="http://liderancacomvoce.com.br/statics/images/carteira.jpg"></a>
 					</div>	
 				
 
@@ -112,7 +109,7 @@
 		
 	</div>
 	<div id="rodape">
-		<center><p>Todos dos diretos reservados. Desenvolvido por Inova Comunicação Visual. 2019</p></center>
+		<center><p style="color: black;">Todos dos diretos reservados. Desenvolvido por <a target="_blank" href="http://www.facebook.com/inovaitabira" style="text-decoration: none;color: black;">Inova Comunicação Visual</a> . 2019</p></center>
 	</div>
 	
 

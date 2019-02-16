@@ -1,0 +1,22 @@
+
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="col-sm-9 col-12">
+
+    <h3>Fotos</h3>
+	<div class="barra"></div>
+	<div class="row" >
+   {% for noticia in noticias%} 
+    {% if noticia.foto %}
+    <div class="col-sm-4">
+    	
+    	<a href="{% url 'noticia' slug=noticia.slug %}"><img  style="width: 100%;padding: 5px; " src="http://liderancacomvoce.com.br/statics/images/noticias/{{noticia.foto}}.png">
+    	</a>
+    </div>   
+    {% endif %}    		
+	{% endfor %}
+	
+    </div>
+</div>		
+{% endblock %}

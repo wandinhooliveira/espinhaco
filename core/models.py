@@ -25,3 +25,4 @@ def artigo_pre_save(signal, instance, sender, **kwargs):
     instance.slug = slugify(instance.titulo)
 
 signals.pre_save.connect(artigo_pre_save, sender=Noticia)
+
