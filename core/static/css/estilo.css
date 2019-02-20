@@ -6,12 +6,25 @@
 	
 
 }
+.logotopo img{
+	width: 100%;
+	
+}
 
 .topo{
 	height: 160px;
 	width: 100%;
-	background-image: url("http://liderancacomvoce.com.br/statics/images/topo-fundo.png");
+	background-image: url("http://liderancacomvoce.com.br/statics/images/fundo.png");
 	background-repeat: repeat-x;
+}
+.caption{
+	background-color: rgba(0,0,0,0.8);
+	width: 80%; 
+	height: 50px; 
+	position: absolute; 
+	margin-top: -60px; 
+	margin-left: 10%;
+
 }
 #propaganda-topo{
 	padding: 20px;
@@ -161,7 +174,7 @@
 
 @media (max-width: 600px) { 
 	.topo{
-		height: 70px;
+		height: 160px;
 	}
 	#propaganda-topo{
 	padding: 0px;
